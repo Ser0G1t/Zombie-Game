@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url('images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    cursor: crosshair;
+    overflow-x:hidden;
+    font-size:70px;
+}
+
+.game-container{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.monster{
+    width:12.5%;
+    height:270px;   
+    transition-duration: .3s;
+    right:-6%;
+    background-image: url('images/zombi2.gif');
+    background-position: center;
+    background-size: cover;
+    position:absolute;
+    top:62%;
+}
+
+.scoreNav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score {
+    width:20%;
+    height:100px;
+    color:white;
+    margin:1% 0 0 1%;
+    text-align:center;
+    line-height: 200%;
+    font-weight: 300;
+}
+
+.health{
+    display:Flex;
+    justify-content: space-around;
+    width: 15%;
+    height:70px;
+    position:relative;
+    right:5%;
+}
+
+.score, .health{
+    border-radius:12%;
+}
+.hp{
+    position: relative;
+    top:15%;
+    background-image: center;
+    background-repeat: no-repeat;
+    width:20%;
+    color:#ff1a1a;
+}
+
+.disappear{
+    display:none;
+}
